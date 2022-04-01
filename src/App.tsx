@@ -1,25 +1,32 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import LaunchTables from "./components/Tables/LaunchTables";
 
 function App() {
   return (
-    <div className="App ">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p className="text-rose-400">testing</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className=" w-full min-h-screen">
+      <header className="">
+        <h1 className="border-b-2 p-4 text-4xl font-semibold text-center">
+          SpaceX launches
+        </h1>
       </header>
+      <main className=" w-full min-h-screen flex justify-center py-10">
+        <div className=" border rounded-lg">
+          <LaunchTables
+            tableData={[
+              {
+                id: "vwettne",
+                nameOfMssion: "shtt",
+                nameOfRocket: "rebwtnt",
+                nameOfCompany: "ertnwnt",
+                massOfRocket: 56457,
+                launchSite: "etnwrnwrt",
+                launchDate: "fbwtwnw",
+              },
+            ]}
+          />
+        </div>
+      </main>
     </div>
   );
 }
