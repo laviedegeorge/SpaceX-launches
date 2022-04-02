@@ -26,7 +26,7 @@ function App() {
         </h1>
       </header>
       <main className=" w-full min-h-screen flex justify-center py-10">
-        <div className=" border rounded-lg">
+        <div className="max-w-full md:max-w-full xl:max-w-screen-lg border rounded-lg m-4 overflow-x-auto">
           <LaunchTables tableData={formattedLaunchesData || []} />
         </div>
       </main>

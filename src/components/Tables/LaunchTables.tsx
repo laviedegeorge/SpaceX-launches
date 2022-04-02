@@ -12,7 +12,10 @@ import { LaunchTableData } from "../../libs/types";
 const LaunchTables = ({ tableData }: { tableData: LaunchTableData[] }) => {
   return (
     <TableContainer>
-      <Table sx={{ maxWidth: "1240px" }} aria-label="Space X launch table">
+      <Table
+        className="max-w-[250px] md:max-w-full xl:max-w-screen-lg overflow-x-auto"
+        aria-label="Space X launch table"
+      >
         <TableHead>
           <TableRow>
             {[
